@@ -34,10 +34,13 @@ export default function useGif(tag) {
   }
 
 
-  // USE EFFECT USE IN FIRST RENDER ONLY 
+  // USE EFFECT USE IN FIRST RENDER ONLY
+  // AIK DEPEDENTCY NETLIFY MAI DALNE KE LIYE DE RAHA , JO CHANGE NA HO . 
+  const no_change = 1 ;  
+
   useEffect( () => {
     fetchData() ; 
-  }, [])
+  }, [no_change])
 
 
   return {gif , loading , fetchData} ; 
