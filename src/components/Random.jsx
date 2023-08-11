@@ -17,7 +17,7 @@ export default function Random() {
 
   return (
 
-    <div className="w-1/2 bg-green-500 rounded-lg border border-black flex flex-col items-center gap-y-5 mt-[15px] ">
+    <div className="w-1/2 bg-green-500 rounded-lg border border-black flex flex-col items-center gap-y-5 mt-[15px] mobile:w-full">
         
         {/* HEADING OF THE GIF  */}
         <h1 className="mt-[15px] text-2xl underline uppercase font-bold"> A Random GIF </h1>

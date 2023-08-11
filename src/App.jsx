@@ -15,7 +15,7 @@ export default function App() {
         {/* HEADING OF THE  */}
          <h1 className="bg-white rounded-lg w-11/12 text-center mt-[40px] px-10 py-2 text-4xl font-bold"> Random GIFS </h1>
 
-        <div className="flex w-11/12 items-center gap-x-10 mt-[30px]">
+        <div className="flex w-11/12 items-center gap-x-10 mt-[30px] mobile:flex-col">
           <Random  />
           <Tag  />
         </div>

@@ -26,7 +26,7 @@ export default function Tag() {
 
   return (
 
-    <div className="w-1/2 bg-blue-500 rounded-lg border border-black flex flex-col items-center gap-y-5 mt-[15px] ">
+    <div className="w-1/2 bg-blue-500 rounded-lg border border-black flex flex-col items-center gap-y-5 mt-[15px] mobile:w-full">
 
       {/* HEADING OF THE GIF  */}
       <h1 className="mt-[15px] text-2xl underline uppercase font-bold ">
