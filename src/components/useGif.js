@@ -36,11 +36,14 @@ export default function useGif(tag) {
 
   // USE EFFECT USE IN FIRST RENDER ONLY
   // AIK DEPEDENTCY NETLIFY MAI DALNE KE LIYE DE RAHA , JO CHANGE NA HO . 
-  const no_change = 1 ;  
 
   useEffect( () => {
     fetchData() ; 
-  }, [no_change])
+
+    // YAH LINE USE KAR RAHE, OTHERWISE NETLIFY KE LIYE , DEPENDENCY DALNA JARURI HOTA HAI . 
+
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, [])
 
 
   return {gif , loading , fetchData} ; 
